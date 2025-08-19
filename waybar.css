@@ -1,13 +1,13 @@
 /* @define-color foreground #996600; */ /* TODO: COLOR */
 /* @define-color background #1A1612; */ /* TODO: COLOR */
-@define-color foreground #FEFEFE; /* TODO: COLOR: set to user foreground */
-/* @define-color background rgba(28,14,0,0.15); */ /* TODO: COLOR */
+@define-color foreground #FEFEFE;
+/* @define-color background rgba(28,14,0,0.15);
 @define-color background #000000; /* TODO: COLOR: set to user background */
-@define-color surface #0F0F0F; /* subtle surface grey */
-@define-color muted #BDBDBD; /* secondary/muted text */
-@define-color border #2B2B2B; /* thin lines and separators */
-@define-color selection #2B2B2B; /* selection/background highlight - stronger for keyboard nav */
-@define-color highlight #F5F5F5; /* subtle highlight (near-white) */
+@define-color surface #0F0F0F;
+@define-color muted #BDBDBD;
+@define-color border #2B2B2B;
+@define-color selection #2B2B2B;
+@define-color highlight #F5F5F5;
 
 /*********** Custom Styling ****************/
 

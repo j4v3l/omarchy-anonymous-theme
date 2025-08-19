@@ -1,11 +1,11 @@
-@define-color bg #000000; /* background */
-@define-color fg #FEFEFE; /* primary foreground */
-@define-color bg_secondary #0F0F0F; /* surface / panel background */
-@define-color fg_dim #BDBDBD; /* muted / secondary text */
-@define-color accent #F5F5F5; /* subtle accent (near-white) */
-@define-color muted #BDBDBD; /* muted color for borders/icons */
-@define-color selection #2B2B2B; /* selected item background - increased contrast */
-@define-color border #2B2B2B; /* border color */
+@define-color bg #000000;
+@define-color fg #FEFEFE;
+@define-color bg_secondary #0F0F0F;
+@define-color fg_dim #BDBDBD;
+@define-color accent #F5F5F5;
+@define-color muted #BDBDBD;
+@define-color selection #2B2B2B;
+@define-color border #2B2B2B;
 
 window {
   background-color: @bg;
