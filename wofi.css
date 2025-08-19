@@ -1,6 +1,6 @@
-@define-color bg #000000;
-@define-color fg #FEFEFE;
-@define-color bg_secondary #0F0F0F;
+@define-color background #000000;
+@define-color foreground #FEFEFE;
+@define-color surface #0F0F0F;
 @define-color fg_dim #BDBDBD;
 @define-color accent #F5F5F5;
 @define-color muted #BDBDBD;
@@ -8,13 +8,13 @@
 @define-color border #2B2B2B;
 
 window {
-  background-color: @bg;
+  background-color: @background;
   border: 2px solid @border;
 }
 
 input {
-  background-color: @bg;
-  color: @fg;
+  background-color: @background;
+  color: @foreground;
   border: 1px solid @muted;
 }
 
@@ -22,13 +22,13 @@ input:selected {
   background-color: @selection;
   color: @accent;
   /* make selection obvious when navigating with keyboard */
-  border-left: 4px solid @highlight;
+  border-left: 4px solid @accent;
   padding-left: 6px; /* account for border */
 }
 
 #entry {
-  color: @fg;
-  background-color: @bg;
+  color: @foreground;
+  background-color: @background;
   padding: 5px;
   margin: 2px;
 }
@@ -36,7 +36,7 @@ input:selected {
 #entry:selected {
   background-color: @selection;
   color: @accent;
-  border-left: 4px solid @highlight;
+  border-left: 4px solid @accent;
   padding-left: 6px; /* account for border */
 }
 

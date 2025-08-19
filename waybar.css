@@ -1,19 +1,18 @@
-/* @define-color foreground #996600; */ /* TODO: COLOR */
-/* @define-color background #1A1612; */ /* TODO: COLOR */
+/* Core palette (kept minimal — black/near-white neutral theme) */
 @define-color foreground #FEFEFE;
-/* @define-color background rgba(28,14,0,0.15);
-@define-color background #000000; /* TODO: COLOR: set to user background */
+@define-color background #000000;
 @define-color surface #0F0F0F;
 @define-color muted #BDBDBD;
 @define-color border #2B2B2B;
 @define-color selection #2B2B2B;
-@define-color highlight #F5F5F5;
+@define-color highlight #F5F5F5; /* subtle near-white accent */
+@define-color accent @highlight;
 
 /*********** Custom Styling ****************/
 
 * {
-  background-color: @background; /* TODO: COLOR */
-  color: @foreground; /* TODO: COLOR */
+  background-color: @background;
+  color: @foreground;
   font-family: JetBrainsMono Nerd Font Propo;
   font-size: 12px;
   font-weight: bold;
@@ -25,31 +24,31 @@
 }
 
 #workspaces button.active {
-  color: @highlight; /* active text uses subtle highlight (near-white) */
-  background-color: rgba(0, 0, 0, 0); /* TODO: COLOR */
+  color: @accent; /* active text uses subtle highlight */
+  background-color: rgba(0, 0, 0, 0);
 }
 
 #workspaces button {
   /* make focused/selected workspace obvious when navigating */
-  transition: background-color 120ms ease-in-out;
+  transition: background-color 150ms ease-in-out, border-left 120ms ease-in-out;
 }
 
 #workspaces button:focus,
 #workspaces button:hover {
   background-color: @selection;
   outline: none;
-  border-left: 3px solid @highlight;
+  border-left: 3px solid @accent;
   padding-left: 6px;
 }
 
 #workspaces button.active label {
-  color: @highlight; /* active text uses subtle highlight */
+  color: @accent; /* active text uses subtle highlight */
   font-weight: bold;
 }
 
 #workspaces button.urgent {
-  color: @highlight; /* urgent uses the same clean highlight */
-  background-color: rgba(0, 0, 0, 0); /* TODO: COLOR */
+  color: @accent; /* urgent uses the same clean highlight */
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /*********** Omarchy Styles (overrides) ****************/

@@ -1,5 +1,6 @@
-@define-color background-color #000000; /* true background */
-@define-color border-color #2B2B2B; /* subtle border */
-@define-color label #FEFEFE; /* text labels */
-@define-color image #FEFEFE; /* image tint if used */
+@define-color background #000000; /* true background */
+@define-color border #2B2B2B; /* subtle border */
+@define-color foreground #FEFEFE; /* text labels */
+@define-color image-tint #FEFEFE; /* image tint if used */
 @define-color progress #F5F5F5; /* progress highlight */
+@define-color accent @progress;
