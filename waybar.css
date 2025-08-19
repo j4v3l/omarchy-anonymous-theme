@@ -6,7 +6,7 @@
 @define-color surface #0F0F0F; /* subtle surface grey */
 @define-color muted #BDBDBD; /* secondary/muted text */
 @define-color border #2B2B2B; /* thin lines and separators */
-@define-color selection #1A1A1A; /* selection/background highlight */
+@define-color selection #2B2B2B; /* selection/background highlight - stronger for keyboard nav */
 @define-color highlight #F5F5F5; /* subtle highlight (near-white) */
 
 /*********** Custom Styling ****************/
@@ -27,6 +27,19 @@
 #workspaces button.active {
   color: @highlight; /* active text uses subtle highlight (near-white) */
   background-color: rgba(0, 0, 0, 0); /* TODO: COLOR */
+}
+
+#workspaces button {
+  /* make focused/selected workspace obvious when navigating */
+  transition: background-color 120ms ease-in-out;
+}
+
+#workspaces button:focus,
+#workspaces button:hover {
+  background-color: @selection;
+  outline: none;
+  border-left: 3px solid @highlight;
+  padding-left: 6px;
 }
 
 #workspaces button.active label {

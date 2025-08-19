@@ -43,5 +43,5 @@ background = '#000000'
 foreground = '#FEFEFE' # '#eibdbb2'
 
 [colors.selection]
-background = '#1A1A1A'
+background = '#2B2B2B' # stronger selection background for visibility when using keyboard
 text = '#FEFEFE'

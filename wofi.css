@@ -4,7 +4,7 @@
 @define-color fg_dim #BDBDBD; /* muted / secondary text */
 @define-color accent #F5F5F5; /* subtle accent (near-white) */
 @define-color muted #BDBDBD; /* muted color for borders/icons */
-@define-color selection #1A1A1A; /* selected item background */
+@define-color selection #2B2B2B; /* selected item background - increased contrast */
 @define-color border #2B2B2B; /* border color */
 
 window {
@@ -21,6 +21,9 @@ input {
 input:selected {
   background-color: @selection;
   color: @accent;
+  /* make selection obvious when navigating with keyboard */
+  border-left: 4px solid @highlight;
+  padding-left: 6px; /* account for border */
 }
 
 #entry {
@@ -33,6 +36,8 @@ input:selected {
 #entry:selected {
   background-color: @selection;
   color: @accent;
+  border-left: 4px solid @highlight;
+  padding-left: 6px; /* account for border */
 }
 
 scrollbar {
