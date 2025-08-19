@@ -1,3 +1,10 @@
+# ────────────────────────────────────────────────────────────
+# Anonymous Theme for Alacritty
+# By J4v3l
+# https://github.com/j4v3l
+# 
+
+
 # Colors (Anonymous — black/white palette)
 
 [colors.normal]
@@ -33,6 +40,12 @@ white = "#F5F5F5"
 [colors.cursor]
 cursor = '#FEFEFE'
 text = '#000000'
+
+[cursor]
+style = { shape = "Underline", blink = "On" }
+blink_interval = 500
+unfocused_hollow = false
+thickness = 0.2
 
 [colors.primary]
 # background = '#2c2525'
