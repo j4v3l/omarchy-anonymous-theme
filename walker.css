@@ -1,0 +1,6 @@
+@define-color selected-text #FEFEFE; /* TODO: set to foreground */ /* #0A0A08 */
+@define-color text #FEFEFE; /* TODO: set to foreground */
+@define-color base #000000; /* TODO: set to background */ /* #0A0A08 */
+@define-color border #FEFEFE; /* TODO: set to foreground */
+@define-color foreground #FEFEFE; /* TODO: set to foreground */
+@define-color background #000000; /* TODO: set to background */

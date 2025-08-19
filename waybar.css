@@ -1,0 +1,89 @@
+/* @define-color foreground #996600; */ /* TODO: COLOR */
+/* @define-color background #1A1612; */ /* TODO: COLOR */
+@define-color foreground #FEFEFE; /* TODO: COLOR: set to user foreground */
+/* @define-color background rgba(28,14,0,0.15); */ /* TODO: COLOR */
+@define-color background #000000; /* TODO: COLOR: set to user background */
+@define-color surface #0F0F0F; /* subtle surface grey */
+@define-color muted #BDBDBD; /* secondary/muted text */
+@define-color border #2B2B2B; /* thin lines and separators */
+@define-color selection #1A1A1A; /* selection/background highlight */
+@define-color highlight #F5F5F5; /* subtle highlight (near-white) */
+
+/*********** Custom Styling ****************/
+
+* {
+  background-color: @background; /* TODO: COLOR */
+  color: @foreground; /* TODO: COLOR */
+  font-family: JetBrainsMono Nerd Font Propo;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#waybar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#workspaces button.active {
+  color: @highlight; /* active text uses subtle highlight (near-white) */
+  background-color: rgba(0, 0, 0, 0); /* TODO: COLOR */
+}
+
+#workspaces button.active label {
+  color: @highlight; /* active text uses subtle highlight */
+  font-weight: bold;
+}
+
+#workspaces button.urgent {
+  color: @highlight; /* urgent uses the same clean highlight */
+  background-color: rgba(0, 0, 0, 0); /* TODO: COLOR */
+}
+
+/*********** Omarchy Styles (overrides) ****************/
+
+* {
+  /* background-color: @background; */
+  /* color: @foreground; */
+
+  /* border: none; */
+  /* border-radius: 0; */
+  /* min-height: 0; */
+  /* font-family: CaskaydiaMono Nerd Font Propo; */
+  /* font-family: JetBrains Nerd Font Propo; */
+  /* font-size: 12px; */
+}
+
+.modules-left {
+  /* margin-left: 8px; */
+}
+
+.modules-right {
+  /* margin-right: 8px; */
+}
+
+#workspaces button {
+  /* all: initial; */
+  /* padding: 0 6px; */
+  /* margin: 0 1.5px; */
+  /* min-width: 9px; */
+}
+
+#tray,
+#cpu,
+#battery,
+#network,
+#bluetooth,
+#pulseaudio,
+#clock,
+#custom-power-menu {
+  /* min-width: 12px; */
+  /* margin: 0 7.5px; */
+}
+
+#custom-expand-icon {
+  /* margin-right: 12px; */
+}
+
+tooltip {
+  /* padding: 2px; */
+}

@@ -1,0 +1,92 @@
+# ────────────────────────────────────────────────────────────
+# Bashtop theme - Omarchy RetroPC
+# by Ron Dilley
+# https://github.com/rondilley
+# ────────────────────────────────────────────────────────────
+
+# Colors should be in 6 or 2 character hexadecimal or single spaced rgb decimal: "#RRGGBB", "#BW" or "0-255 0-255 0-255"
+# example for white: "#ffffff", "#ff" or "255 255 255".
+
+# All graphs and meters can be gradients
+# For single color graphs leave "mid" and "end" variable empty.
+# Use "start" and "end" variables for two color gradient
+# Use "start", "mid" and "end" for three color gradient
+
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="#000000"
+
+# Main text color
+theme[main_fg]="#FEFEFE"
+
+# Title color for boxes
+theme[title]="#F5F5F5"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#F5F5F5"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#1A1A1A"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#FEFEFE"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#BDBDBD"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#BDBDBD"
+
+# Cpu box outline color
+theme[cpu_box]="#2B2B2B"
+
+# Memory/disks box outline color
+theme[mem_box]="#2B2B2B"
+
+# Net up/down box outline color
+theme[net_box]="#2B2B2B"
+
+# Processes box outline color
+theme[proc_box]="#2B2B2B"
+
+# Box divider line and small boxes line color
+theme[div_line]="#2B2B2B"
+
+# Temperature graph colors (dark -> muted -> highlight)
+theme[temp_start]="#2B2B2B"
+theme[temp_mid]="#BDBDBD"
+theme[temp_end]="#FEFEFE"
+
+# CPU graph colors (dark -> muted -> highlight)
+theme[cpu_start]="#2B2B2B"
+theme[cpu_mid]="#BDBDBD"
+theme[cpu_end]="#FEFEFE"
+
+# Mem/Disk free meter
+theme[free_start]="#2B2B2B"
+theme[free_mid]="#BDBDBD"
+theme[free_end]="#FEFEFE"
+
+# Mem/Disk cached meter
+theme[cached_start]="#2B2B2B"
+theme[cached_mid]="#BDBDBD"
+theme[cached_end]="#FEFEFE"
+
+# Mem/Disk available meter
+theme[available_start]="#2B2B2B"
+theme[available_mid]="#BDBDBD"
+theme[available_end]="#FEFEFE"
+
+# Mem/Disk used meter
+theme[used_start]="#2B2B2B"
+theme[used_mid]="#BDBDBD"
+theme[used_end]="#FEFEFE"
+
+# Download graph colors
+theme[download_start]="#2B2B2B"
+theme[download_mid]="#BDBDBD"
+theme[download_end]="#FEFEFE"
+
+# Upload graph colors
+theme[upload_start]="#2B2B2B"
+theme[upload_mid]="#BDBDBD"
+theme[upload_end]="#FEFEFE"
