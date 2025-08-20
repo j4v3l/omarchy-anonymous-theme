@@ -1,18 +1,19 @@
-/* Core palette (kept minimal — black/near-white neutral theme) */
-@define-color foreground #FEFEFE;
-@define-color background #000000;
-@define-color surface #0F0F0F;
-@define-color muted #BDBDBD;
-@define-color border #2B2B2B;
-@define-color selection #2B2B2B;
-@define-color highlight #F5F5F5; /* subtle near-white accent */
-@define-color accent @highlight;
+/* @define-color foreground #996600; */ /* TODO: COLOR */
+/* @define-color background #1A1612; */ /* TODO: COLOR */
+@define-color foreground #FEFEFE; /* TODO: COLOR: set to user foreground */
+/* @define-color background rgba(28,14,0,0.15); */ /* TODO: COLOR */
+@define-color background #000000; /* TODO: COLOR: set to user background */
+@define-color surface #0F0F0F; /* subtle surface grey */
+@define-color muted #BDBDBD; /* secondary/muted text */
+@define-color border #2B2B2B; /* thin lines and separators */
+@define-color selection #1A1A1A; /* selection/background highlight */
+@define-color highlight #F5F5F5; /* subtle highlight (near-white) */
 
 /*********** Custom Styling ****************/
 
 * {
-  background-color: @background;
-  color: @foreground;
+  background-color: @background; /* TODO: COLOR */
+  color: @foreground; /* TODO: COLOR */
   font-family: JetBrainsMono Nerd Font Propo;
   font-size: 12px;
   font-weight: bold;
@@ -24,31 +25,18 @@
 }
 
 #workspaces button.active {
-  color: @accent; /* active text uses subtle highlight */
-  background-color: rgba(0, 0, 0, 0);
-}
-
-#workspaces button {
-  /* make focused/selected workspace obvious when navigating */
-  transition: background-color 150ms ease-in-out, border-left 120ms ease-in-out;
-}
-
-#workspaces button:focus,
-#workspaces button:hover {
-  background-color: @selection;
-  outline: none;
-  border-left: 3px solid @accent;
-  padding-left: 6px;
+  color: @highlight; /* active text uses subtle highlight (near-white) */
+  background-color: rgba(0, 0, 0, 0); /* TODO: COLOR */
 }
 
 #workspaces button.active label {
-  color: @accent; /* active text uses subtle highlight */
+  color: @highlight; /* active text uses subtle highlight */
   font-weight: bold;
 }
 
 #workspaces button.urgent {
-  color: @accent; /* urgent uses the same clean highlight */
-  background-color: rgba(0, 0, 0, 0);
+  color: @highlight; /* urgent uses the same clean highlight */
+  background-color: rgba(0, 0, 0, 0); /* TODO: COLOR */
 }
 
 /*********** Omarchy Styles (overrides) ****************/

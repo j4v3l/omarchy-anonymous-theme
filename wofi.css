@@ -1,34 +1,31 @@
-@define-color background #000000;
-@define-color foreground #FEFEFE;
-@define-color surface #0F0F0F;
-@define-color fg_dim #BDBDBD;
-@define-color accent #F5F5F5;
-@define-color muted #BDBDBD;
-@define-color selection #2B2B2B;
-@define-color border #2B2B2B;
+@define-color bg #000000; /* background */
+@define-color fg #FEFEFE; /* primary foreground */
+@define-color bg_secondary #0F0F0F; /* surface / panel background */
+@define-color fg_dim #BDBDBD; /* muted / secondary text */
+@define-color accent #F5F5F5; /* subtle accent (near-white) */
+@define-color muted #BDBDBD; /* muted color for borders/icons */
+@define-color selection #1A1A1A; /* selected item background */
+@define-color border #2B2B2B; /* border color */
 
 window {
-  background-color: @background;
+  background-color: @bg;
   border: 2px solid @border;
 }
 
 input {
-  background-color: @background;
-  color: @foreground;
+  background-color: @bg;
+  color: @fg;
   border: 1px solid @muted;
 }
 
 input:selected {
   background-color: @selection;
   color: @accent;
-  /* make selection obvious when navigating with keyboard */
-  border-left: 4px solid @accent;
-  padding-left: 6px; /* account for border */
 }
 
 #entry {
-  color: @foreground;
-  background-color: @background;
+  color: @fg;
+  background-color: @bg;
   padding: 5px;
   margin: 2px;
 }
@@ -36,8 +33,6 @@ input:selected {
 #entry:selected {
   background-color: @selection;
   color: @accent;
-  border-left: 4px solid @accent;
-  padding-left: 6px; /* account for border */
 }
 
 scrollbar {
