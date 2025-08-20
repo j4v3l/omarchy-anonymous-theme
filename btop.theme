@@ -1,7 +1,7 @@
 # ────────────────────────────────────────────────────────────
-# Bashtop theme - Omarchy RetroPC
-# by Ron Dilley
-# https://github.com/rondilley
+# Anonymous Theme for Alacritty
+# by RJ4v3l
+# https://github.com/j4v3l
 # ────────────────────────────────────────────────────────────
 
 # Colors should be in 6 or 2 character hexadecimal or single spaced rgb decimal: "#RRGGBB", "#BW" or "0-255 0-255 0-255"
@@ -25,7 +25,7 @@ theme[title]="#F5F5F5"
 theme[hi_fg]="#F5F5F5"
 
 # Background color of selected item in processes box
-theme[selected_bg]="#1A1A1A"
+theme[selected_bg]="#2B2B2B" # stronger selected background for better contrast when navigating
 
 # Foreground color of selected item in processes box
 theme[selected_fg]="#FEFEFE"
