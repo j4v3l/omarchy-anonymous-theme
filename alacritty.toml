@@ -43,10 +43,6 @@ text = '#000000'
 
 [cursor.style]
 shape = "Underline"
-blink = "On"
-blink_interval = 500
-unfocused_hollow = false
-thickness = 0.2
 
 [colors.primary]
 # background = '#2c2525'
