@@ -41,8 +41,9 @@ white = "#F5F5F5"
 cursor = '#FEFEFE'
 text = '#000000'
 
-[cursor]
-style = { shape = "Underline", blink = "On" }
+[cursor.style]
+shape = "Underline"
+blink = "On"
 blink_interval = 500
 unfocused_hollow = false
 thickness = 0.2
