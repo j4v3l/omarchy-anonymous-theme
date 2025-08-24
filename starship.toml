@@ -1,0 +1,104 @@
+# Starship prompt - Anonymous Monochrome Theme (Omarchy)
+# Minimalist, monochrome, modern palette inspired by this repo
+
+# Use direct hex colors for maximum compatibility (no palette dependency)
+
+# General behavior
+add_newline = true
+command_timeout = 1000
+
+# Optional right prompt (supported in many shells)
+right_format = "$time$cmd_duration"
+continuation_prompt = "› "
+
+# Character (prompt symbol)
+[character]
+success_symbol = "[❯](fg:#F5F5F5) "
+error_symbol = "[❯](fg:#F5F5F5) "
+vimcmd_symbol = "[❮](fg:#F5F5F5) "
+
+# Username
+[username]
+style_user = "#BDBDBD"
+style_root = "#F5F5F5"
+format = "[$user]($style) "
+show_always = false
+
+# Hostname (only on SSH by default)
+[hostname]
+ssh_only = true
+style = "#BDBDBD"
+format = "[@$hostname]($style) "
+
+# Current directory
+[directory]
+style = "#FEFEFE"
+format = "[$path]($style)[$read_only]($read_only_style) "
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = " "
+read_only_style = "#BDBDBD"
+home_symbol = "~"
+repo_root_style = "#F5F5F5"
+
+# Git branch
+[git_branch]
+symbol = " "
+style = "#F5F5F5"
+format = "[$symbol$branch]($style) "
+
+# Git status
+[git_status]
+style = "#BDBDBD"
+format = "([$all_status$ahead_behind]($style) )"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+staged = "+${count}"
+modified = "!${count}"
+deleted = "x${count}"
+conflicted = "~${count}"
+renamed = "»${count}"
+untracked = "?${count}"
+stashed = "≡"
+
+# Command duration (also echoed on the right)
+[cmd_duration]
+min_time = 2000
+style = "#BDBDBD"
+format = "[⏱ $duration]($style) "
+
+# Time (shown on the right)
+[time]
+disabled = false
+format = "[ $time]($style)"
+style = "#BDBDBD"
+time_format = "%H:%M"
+
+# Languages (minimal, muted)
+[nodejs]
+format = "[node $version]($style) "
+style = "#BDBDBD"
+
+[python]
+format = "[py $version]($style) "
+style = "#BDBDBD"
+
+[rust]
+format = "[rs $version]($style) "
+style = "#BDBDBD"
+
+[golang]
+format = "[go $version]($style) "
+style = "#BDBDBD"
+
+[docker_context]
+format = "[docker]($style) "
+style = "#BDBDBD"
+
+[kubernetes]
+format = "[k8s $context]($style) "
+style = "#BDBDBD"
+
+[package]
+style = "#BDBDBD"
+
